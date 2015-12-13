@@ -1,0 +1,29 @@
+{
+  "name": "project",
+  "description": "new",
+  "main": "Gruntfile.js",
+  "authors": [
+    "Nikita"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "new",
+    "project"
+  ],
+  "homepage": "https://github.com/KtoYkraJlMoyNick/KtoYkraJlMoyNick.github.io",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "grunt-cli": "~0.1.13",
+    "grunt": "~0.4.5"
+  },
+  "devDependencies": {
+    "less": "~2.5.3"
+  }
+}

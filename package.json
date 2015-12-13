@@ -1,0 +1,33 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "new",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KtoYkraJlMoyNick/KtoYkraJlMoyNick.github.io.git"
+  },
+  "keywords": [
+    "new",
+    "project"
+  ],
+  "author": "Nikita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KtoYkraJlMoyNick/KtoYkraJlMoyNick.github.io/issues"
+  },
+  "homepage": "https://github.com/KtoYkraJlMoyNick/KtoYkraJlMoyNick.github.io#readme",
+  "dependencies": {
+    "bower": "^1.7.1",
+    "time-grunt": "^1.2.2"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "load-grunt-config": "^0.19.1",
+    "load-grunt-tasks": "^3.3.0"
+  }
+}
