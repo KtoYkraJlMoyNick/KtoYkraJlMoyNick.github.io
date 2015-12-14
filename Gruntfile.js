@@ -5,6 +5,23 @@ module.exports = function(grunt) {
 	var config = {
 		pkg: grunt.file.readJSON('package.json'),
 		
+		copy: {
+			build: {
+				files: [{
+					expand: true,
+					cwd: "src",
+					src: [
+					 "css/*.css",
+					 "img/**",
+					 "js/*.js",
+					 "form.html",
+					 "index.html"
+					],
+				dest: "./"
+				}]
+			}
+		},
+		
 		less: {
 			development: {
 				files: {
@@ -24,6 +41,9 @@ module.exports = function(grunt) {
 		}
 	};
 	grunt.initConfig(config);
+	grunt.registerTask('build',[
+		'copy:build'
+		]);
 	grunt.registerTask('dev',[
 		'less:development'
 		]);
