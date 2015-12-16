@@ -5,6 +5,10 @@ module.exports = function(grunt) {
 	var config = {
 		pkg: grunt.file.readJSON('package.json'),
 		
+		clean: {
+			build: ['css/', 'img/', 'js/']
+		}, 
+		
 		copy: {
 			build: {
 				files: [{
@@ -13,7 +17,7 @@ module.exports = function(grunt) {
 					src: [
 					 "css/*.css",
 					 "img/**",
-					 "js/*.js",
+					 "js/**",
 					 "form.html",
 					 "index.html"
 					],
@@ -42,6 +46,7 @@ module.exports = function(grunt) {
 	};
 	grunt.initConfig(config);
 	grunt.registerTask('build',[
+		'clean:build',
 		'copy:build'
 		]);
 	grunt.registerTask('dev',[
