@@ -3,23 +3,70 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Стартовая</title>
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.2.0.min.js"></script>
 </head>
 <body>
 	<header class="main-header">
 	    <div class="main-header__wrap">
-	        <h1>HEADER</h1>
+	        <nav class="main-nav">
+	            <ul class="main-nav__list">
+                    <li class="main-nav__tab"><a class="main-nav__link main-nav__link--active" href="#">Главная</a></li>
+                    <li class="main-nav__tab"><a class="main-nav__link" href="#">Портфолио</a></li>
+                    <li class="main-nav__tab"><a class="main-nav__link" href="#">Обо мне</a></li>
+	            </ul>
+	        </nav>
 	    </div>
     </header>
-	<div class="content">
+	<main class="content">
 	    <div class="content__wrap">
-	        <h1>CONTENT</h1>
+            <section class="slider">
+                <article class="slider__slide   slider__show">
+                </article>
+                <article class="slider__slide">
+                    <ul class="portfolio">
+                        <li class="portfolio__unit">
+                            <a href="./fudi/index.html" class="portfolio__link">
+                                <img class="portfolio__icon" src="./img/p/p-fudi.jpg" alt="fudi" width="300" height="auto">
+                            </a>
+                            <p class="portfolio__descr">"Fudi" - не более чем развлечение</p>
+                        </li>
+                        <li class="portfolio__unit">
+                            <a href="./technomart/index.html" class="portfolio__link">
+                                <img class="portfolio__icon" src="./img/p/p-technomart.jpg" alt="Техномарт" width="300" height="auto">
+                            </a>
+                            <p class="portfolio__descr">"Техномарт" - первый законченный проект, двустраничный сайт</p>
+                        </li>
+                        <li class="portfolio__unit">
+                            <a href="./pink/index.html" class="portfolio__link">
+                                <img class="portfolio__icon" src="./img/p/p-pink.jpg" alt="Пинк" width="300" height="auto">
+                            </a>
+                            <p class="portfolio__descr">"Пинк" - проект, адаптированный для мобильных устройств и десктопа</p>
+                        </li>
+                        <li class="portfolio__unit">
+                            <a href="#" class="portfolio__link">
+                                <img class="portfolio__icon" src="./img/p/p-thinking-about.png" alt="thinking about"  width="300" height="auto">
+                            </a>
+                            <p class="portfolio__descr">Что-нибудь придумаем</p>
+                        </li>
+                    </ul>
+                </article>
+                <article class="slider__slide">
+                    <div class="slider__my-descr clearfix">
+                        <img class="slider__my-photo" src="./img/p/p-me-or-what.jpg" alt="me or what?!" width="250" height="320">
+                        <p class="slider__about-me">Никита, 27 лет, г.Санкт-Петербург</br>Начинающий HTML-верстальщик, выпускник базового и продвинутого курсов htmlacademy</br>0,5 года &lt; ОПЫТ &lt; 1 год</br>Навыки: HTML5, CSS3, LESS, JQuery, Grunt, PS в пределах нарезки макета</br>В настоящее время - сисадмин, ищущий себя в веб-разработке.</p>
+                    </div>
+                </article>
+            </section>
+            <img class="flap flap--left" src="#" alt="left-flap">
+            <img class="flap flap--right" src="#" alt="right-flap">
 	    </div>
-	</div>
+	</main>
 	<footer class="main-footer">
         <div class="main-footer__wrap">
-            <h1>FOOTER</h1>
+            <h1 class="main-footer__title">Будьте как дома</h1>
         </div>
 	</footer>
+	<script src="js/common.js"></script>
 </body>
 </html>

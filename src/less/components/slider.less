@@ -1,0 +1,33 @@
+.slider {
+    &__slide {
+        display: none;  
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);        
+    }
+    &__slide:last-child {
+        top: 35%;  
+    }
+    &__show {
+        display: block;
+        animation: visible 1.5s ease-in;
+    }
+    &__slide-title {
+        font: 400 italic 3rem/1 @font-main;
+        color: @color-main;
+    }
+    &__my-descr {
+        margin-top: 20px;
+    }
+    &__about-me {
+        white-space: pre-wrap;
+        text-align: left;
+    }
+    &__my-photo {
+        display: block;
+        float: left;
+        margin-right: 10px;
+        box-shadow: 0 0 4px 4px @color-four;
+    }
+}

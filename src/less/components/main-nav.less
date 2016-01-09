@@ -1,0 +1,23 @@
+.main-nav {
+    font-size: 0;
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px 0;
+    }
+    &__tab {
+        
+    }
+    &__link {
+        color: @font-color-main;
+        font: 400 italic 3rem/1 @font-main;
+        text-decoration: none;
+        &:hover {
+            text-shadow: 1px 1px 4px @color-main, 0 0 1em @color-four;
+        }
+        &--active {
+            text-shadow: 1px 1px 2px @color-main, 0 0 1em @color-four;
+        }
+    }
+}
