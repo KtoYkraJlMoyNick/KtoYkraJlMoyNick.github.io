@@ -69,7 +69,6 @@ ul {
 .content {
   flex-grow: 1;
   font-size: 2rem;
-  position: relative;
   background-color: #FEF5E4;
 }
 .content__wrap {
@@ -79,10 +78,7 @@ ul {
 }
 .slider__slide {
   display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding-top: 70px;
 }
 .slider__slide:last-child {
   top: 35%;
@@ -105,14 +101,13 @@ ul {
 .slider__my-photo {
   display: block;
   float: left;
-  margin-right: 10px;
+  margin-right: 15px;
   box-shadow: 0 0 4px 4px #c5c5c5;
 }
 .flap {
   display: none;
 }
 .portfolio {
-  padding: 30px 0;
   font-size: 0;
 }
 .portfolio__unit {
