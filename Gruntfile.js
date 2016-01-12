@@ -9,6 +9,17 @@ module.exports = function(grunt) {
 			build: ['css/', 'img/', 'js/']
 		}, 
 		
+		postcss: {
+		  options: {
+			processors: [
+			  require('autoprefixer')({browsers: 'last 2 versions'})
+			]
+		  },
+		  style: {
+			src: ["css/*.css"]
+		  }
+		},
+	
 		copy: {
 			build: {
 				files: [{
@@ -50,7 +61,8 @@ module.exports = function(grunt) {
 	grunt.initConfig(config);
 	grunt.registerTask('build',[
 		'clean:build',
-		'copy:build'
+		'copy:build',
+		'postcss'
 		]);
 	grunt.registerTask('dev',[
 		'less:development'

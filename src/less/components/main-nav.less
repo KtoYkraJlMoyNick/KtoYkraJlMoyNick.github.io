@@ -7,17 +7,26 @@
         padding: 20px 0;
     }
     &__tab {
-        
+        position: relative;
     }
     &__link {
         color: @font-color-main;
         font: 400 italic 3rem/1 @font-main;
         text-decoration: none;
         &:hover {
-            text-shadow: 1px 1px 4px @color-main, 0 0 1em @color-four;
+            text-shadow: 1px 1px 6px @color-main, 0 0 2em @color-four;
         }
         &--active {
-            text-shadow: 1px 1px 2px @color-main, 0 0 1em @color-four;
+            text-shadow: 1px 1px 2px @color-main, 0 0 2em @color-four;
+            &:after {
+                content: "";
+                height: 3px;
+                width: 100%;
+                background-color: @color-third;
+                position: absolute;
+                bottom: -6px;
+                left: 0;
+            }
         }
     }
 }
