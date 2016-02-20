@@ -1,20 +1,67 @@
+$(function() {
+
+	//SVG Fallback
+	if(!Modernizr.svg) {
+		$("img[src*='svg']").attr("src", function() {
+			return $(this).attr("src").replace(".svg", ".png");
+		});
+	};
+
+	//E-mail Ajax Send
+	//Documentation & Example: https://github.com/agragregra/uniMail
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+	//Chrome Smooth Scroll
+	try {
+		$.browserSelector();
+		if($("html").hasClass("chrome")) {
+			$.smoothScroll();
+		}
+	} catch(err) {
+
+	};
+
+	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
+	
+});
+
 $(document).ready(function(){
-    $(".main-nav__tab:first-child a").click(function(event){
-        event.preventDefault();
-        activate(".main-nav__tab:first-child a", ".main-nav__link--active", "main-nav__link--active" );
-        showSlide(".slider__slide:first-child", ".slider__show", "slider__show");
-    });
-    $(".main-nav__tab:nth-child(2) a").click(function(event){
-        event.preventDefault();
-        activate(".main-nav__tab:nth-child(2) a", ".main-nav__link--active", "main-nav__link--active" );
-        showSlide(".slider__slide:nth-child(2)", ".slider__show", "slider__show");
-    });
-    var activate = function(target, elem, activeElem){
-        $(elem).removeClass(activeElem);
-        $(target).addClass(activeElem);
-    };
-    var showSlide = function(target, elem, showElem){
-        $(elem).removeClass(showElem);
-        $(target).addClass(showElem);
-    };
+	function heightDetect(){
+		$(".main-header").css("min-height", $(window).height());
+	};
+	heightDetect();
+	$( window ).resize(function() {
+ 		 heightDetect();
+	});
+	$(".main-header").parallax(	{imageSrc: 'img/bg.jpg'});
+	$(".c-hamburger").on("click", function(){
+		$(".main-header__nav-wrap").fadeToggle("linear");
+	});
+	$(".main-nav__link").on("click", function(){
+		$(".main-header__nav-wrap").fadeToggle("linear");
+		$(".is-active").removeClass("is-active");
+	});
+	$("a[href*='#']").mPageScroll2id();
+});
+
+
+$(window).load(function() {
+
+	$(".loader_inner").fadeOut();
+	$(".loader").delay(400).fadeOut("slow");
+
 });

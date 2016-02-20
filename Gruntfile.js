@@ -29,10 +29,11 @@ module.exports = function(grunt) {
 					 "css/*.css",
 					 "img/**",
 					 "fudi/**",
+					 "folio/**",
 					 "pink/**",
 					 "technomart/**",
+					 "libs/**",
 					 "js/**",
-					 "form.html",
 					 "index.html"
 					],
 				dest: "./"
