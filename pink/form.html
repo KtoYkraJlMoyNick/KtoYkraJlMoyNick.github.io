@@ -138,8 +138,8 @@
               <div class="main-header__nav-wrap">
             	  <nav class="main-nav">
                 	 <ul class="main-nav__list">
-                    	  <li class="main-nav__item"><a href="#">информация</a></li>
-                    	  <li class="main-nav__item"><a href="#">блог</a></li>
+                    	  <li class="main-nav__item"><a href="index.html">информация</a></li>
+                    	  <li class="main-nav__item"><a href="blog.html">блог</a></li>
                     	  <li class="main-nav__item"><a href="#">отзывы</a></li>
                     	  <li class="main-nav__item"><a href="form.html">конкурс</a></li>
                     </ul>
@@ -510,7 +510,13 @@
 	    	</div>
 		</div>
     </div>        
+    <script src="js/mustache.min.js"></script>
     <script src="js/script.js"></script>       
     <script src="js/range.js"></script>
+    <script id="template" type="html/text">
+	    <img class="photos-form__img-block" src="{{source}}" alt="{{name}}" height="120" width="120">
+	    <span class="photos-form__name-photo">{{name}}</span>
+	    <div class="photos-form__remove-photo"></div>
+    </script>
 </body>
 </html>
