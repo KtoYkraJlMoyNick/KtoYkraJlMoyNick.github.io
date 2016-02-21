@@ -1313,6 +1313,7 @@ input[type=number]::-webkit-outer-spin-button {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 39px 20px 0;
+	max-width: 67px;
 	text-align: left;
 }
 
@@ -1331,6 +1332,7 @@ input[type=number]::-webkit-outer-spin-button {
 	font: 400 1.2rem/1.8rem "Open Sans", Arial, sans-serif;
 	color: #1c2630;
 	text-transform: uppercase;
+	word-wrap: break-word;
 }
 
 .photos-form__remove-photo {
@@ -2407,6 +2409,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .photos-form__item {
 	margin: 49px 70px 0 0;
+	max-width: 120px;
 }
 
 .photos-form__item:nth-child(3n) {
