@@ -1,3 +1,4 @@
+"use strict";
 // контроллер filterCtrlLeft
 filterApp.controller('filterCtrlLeft', function ($scope, $http, infoBlock){
 
@@ -50,7 +51,7 @@ filterApp.controller('filterCtrlRight', function($scope, $http, infoBlock){
     var unit = $scope.items,
         resultArr = [];
 
-    for (i=0; i<unit.length; i++) {
+    for (var i=0; i<unit.length; i++) {
       resultArr = resultArr.concat(unit[i].flags);
     }
 
@@ -72,7 +73,7 @@ filterApp.controller('filterCtrlRight', function($scope, $http, infoBlock){
   $scope.itemFilter = function(item) {
    var filters = $scope.selection || [];
    var matched = true;
-   
+
    filters.forEach(function(property) {
      var matchingService = item.flags.filter(function(element, idx, array) {
      return element == property;
@@ -126,26 +127,3 @@ filterApp.controller('middleCtrl', function($scope, infoBlock){
         true
     )
 });
-
-// сервис infoBlock
-filterApp.service('infoBlock', function() {
-  var _item = {
-        "name" : "item1",
-        "flags": [
-          "heart",
-      		"flower",
-      		"flash",
-      		"sun"
-        ]
-      };
-
-  return {
-    setInfo: function(item) {
-      _item.name = item.name;
-      _item.flags = item.flags;
-    },
-    getInfo: function() {
-      return _item;
-    }
-  }
-})
