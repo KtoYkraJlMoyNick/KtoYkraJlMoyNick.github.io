@@ -1,0 +1,591 @@
+[{
+	"name": "labore",
+	"flags": [
+		"heart",
+		"flash"
+	]
+}, {
+	"name": "eiusmod",
+	"flags": [
+		"flash",
+		"flower"
+	]
+}, {
+	"name": "ullamco",
+	"flags": [
+		"sun",
+		"flower"
+	]
+}, {
+	"name": "ut",
+	"flags": [
+		"sun",
+		"heart",
+		"flower"
+	]
+}, {
+	"name": "fugiat",
+	"flags": [
+		"heart",
+		"flash"
+	]
+}, {
+	"name": "deserunt",
+	"flags": [
+		"flash",
+		"heart"
+	]
+}, {
+	"name": "irure",
+	"flags": [
+		"flower",
+		"flash"
+	]
+}, {
+	"name": "ipsum",
+	"flags": [
+		"flash",
+		"sun"
+	]
+}, {
+	"name": "elit",
+	"flags": [
+		"flash"
+	]
+}, {
+	"name": "consectetur",
+	"flags": [
+		"sun"
+	]
+}, {
+	"name": "id",
+	"flags": [
+		"flower",
+		"sun"
+	]
+}, {
+	"name": "est",
+	"flags": [
+		"heart",
+		"flash"
+	]
+}, {
+	"name": "ea",
+	"flags": [
+		"heart",
+		"sun"
+	]
+}, {
+	"name": "nulla",
+	"flags": [
+		"heart"
+	]
+}, {
+	"name": "reprehenderit",
+	"flags": [
+		"flash"
+	]
+}, {
+	"name": "qui",
+	"flags": [
+		"heart",
+		"sun"
+	]
+}, {
+	"name": "aliquip",
+	"flags": [
+		"flower",
+		"heart",
+		"sun"
+	]
+}, {
+	"name": "exercitation",
+	"flags": [
+		"sun",
+		"flower",
+		"heart"
+	]
+}, {
+	"name": "duis",
+	"flags": [
+		"sun"
+	]
+}, {
+	"name": "ex",
+	"flags": [
+		"flower"
+	]
+}, {
+	"name": "dolor",
+	"flags": [
+		"flash",
+		"sun",
+		"flower"
+	]
+}, {
+	"name": "ad",
+	"flags": [
+		"flash",
+		"sun",
+		"flower"
+	]
+}, {
+	"name": "culpa",
+	"flags": [
+		"sun",
+		"heart"
+	]
+}, {
+	"name": "adipisicing",
+	"flags": [
+		"flower"
+	]
+}, {
+	"name": "et",
+	"flags": [
+		"flower"
+	]
+}, {
+	"name": "ea",
+	"flags": [
+		"flower",
+		"flash"
+	]
+}, {
+	"name": "ea",
+	"flags": [
+		"flash",
+		"heart",
+		"sun"
+	]
+}, {
+	"name": "in",
+	"flags": [
+		"flash",
+		"sun"
+	]
+}, {
+	"name": "irure",
+	"flags": [
+		"sun"
+	]
+}, {
+	"name": "Lorem",
+	"flags": [
+		"flash"
+	]
+}, {
+	"name": "consectetur",
+	"flags": [
+		"flower"
+	]
+}, {
+	"name": "enim",
+	"flags": [
+		"heart"
+	]
+}, {
+	"name": "qui",
+	"flags": [
+		"flower",
+		"flash",
+		"sun"
+	]
+}, {
+	"name": "id",
+	"flags": [
+		"flower",
+		"flash",
+		"sun"
+	]
+}, {
+	"name": "proident",
+	"flags": [
+		"flash"
+	]
+}, {
+	"name": "minim",
+	"flags": [
+		"flower"
+	]
+}, {
+	"name": "sunt",
+	"flags": [
+		"heart"
+	]
+}, {
+	"name": "laborum",
+	"flags": [
+		"heart",
+		"flower"
+	]
+}, {
+	"name": "elit",
+	"flags": [
+		"heart",
+		"flower"
+	]
+}, {
+	"name": "pariatur",
+	"flags": [
+		"sun",
+		"flower"
+	]
+}, {
+	"name": "labore",
+	"flags": [
+		"flash",
+		"flower"
+	]
+}, {
+	"name": "duis",
+	"flags": [
+		"sun"
+	]
+}, {
+	"name": "culpa",
+	"flags": [
+		"sun",
+		"heart"
+	]
+}, {
+	"name": "eiusmod",
+	"flags": [
+		"flash",
+		"flower",
+		"heart"
+	]
+}, {
+	"name": "dolor",
+	"flags": [
+		"sun",
+		"flower",
+		"heart"
+	]
+}, {
+	"name": "cupidatat",
+	"flags": [
+		"flash",
+		"flower",
+		"sun"
+	]
+}, {
+	"name": "commodo",
+	"flags": [
+		"sun",
+		"flash",
+		"flower"
+	]
+}, {
+	"name": "fugiat",
+	"flags": [
+		"sun",
+		"heart"
+	]
+}, {
+	"name": "irure",
+	"flags": [
+		"flash",
+		"heart",
+		"sun"
+	]
+}, {
+	"name": "duis",
+	"flags": [
+		"heart",
+		"flash"
+	]
+}, {
+	"name": "irure",
+	"flags": [
+		"sun",
+		"flash"
+	]
+}, {
+	"name": "sunt",
+	"flags": [
+		"sun"
+	]
+}, {
+	"name": "est",
+	"flags": [
+		"flash",
+		"heart"
+	]
+}, {
+	"name": "aliquip",
+	"flags": [
+		"sun",
+		"heart"
+	]
+}, {
+	"name": "ullamco",
+	"flags": [
+		"sun",
+		"heart"
+	]
+}, {
+	"name": "dolor",
+	"flags": [
+		"sun",
+		"flower",
+		"flash"
+	]
+}, {
+	"name": "nostrud",
+	"flags": [
+		"heart",
+		"flower",
+		"flash"
+	]
+}, {
+	"name": "nisi",
+	"flags": [
+		"sun",
+		"flower"
+	]
+}, {
+	"name": "cupidatat",
+	"flags": [
+		"sun",
+		"flower"
+	]
+}, {
+	"name": "elit",
+	"flags": [
+		"flower",
+		"heart"
+	]
+}, {
+	"name": "deserunt",
+	"flags": [
+		"flash"
+	]
+}, {
+	"name": "quis",
+	"flags": [
+		"heart"
+	]
+}, {
+	"name": "magna",
+	"flags": [
+		"sun"
+	]
+}, {
+	"name": "enim",
+	"flags": [
+		"sun",
+		"flower"
+	]
+}, {
+	"name": "consequat",
+	"flags": [
+		"flash"
+	]
+}, {
+	"name": "adipisicing",
+	"flags": [
+		"sun",
+		"heart",
+		"flash"
+	]
+}, {
+	"name": "qui",
+	"flags": [
+		"heart",
+		"sun"
+	]
+}, {
+	"name": "officia",
+	"flags": [
+		"heart",
+		"sun"
+	]
+}, {
+	"name": "amet",
+	"flags": [
+		"flash"
+	]
+}, {
+	"name": "qui",
+	"flags": [
+		"flower",
+		"sun",
+		"heart"
+	]
+}, {
+	"name": "labore",
+	"flags": [
+		"heart"
+	]
+}, {
+	"name": "est",
+	"flags": [
+		"flash",
+		"heart"
+	]
+}, {
+	"name": "ad",
+	"flags": [
+		"flower",
+		"sun",
+		"heart"
+	]
+}, {
+	"name": "quis",
+	"flags": [
+		"flash",
+		"flower"
+	]
+}, {
+	"name": "adipisicing",
+	"flags": [
+		"flower",
+		"heart",
+		"sun"
+	]
+}, {
+	"name": "irure",
+	"flags": [
+		"heart",
+		"sun"
+	]
+}, {
+	"name": "et",
+	"flags": [
+		"heart",
+		"flash",
+		"flower"
+	]
+}, {
+	"name": "anim",
+	"flags": [
+		"heart",
+		"flower"
+	]
+}, {
+	"name": "commodo",
+	"flags": [
+		"flash"
+	]
+}, {
+	"name": "ut",
+	"flags": [
+		"flower",
+		"flash"
+	]
+}, {
+	"name": "eu",
+	"flags": [
+		"sun"
+	]
+}, {
+	"name": "voluptate",
+	"flags": [
+		"heart",
+		"flower"
+	]
+}, {
+	"name": "ea",
+	"flags": [
+		"flash",
+		"heart"
+	]
+}, {
+	"name": "ex",
+	"flags": [
+		"flash",
+		"sun"
+	]
+}, {
+	"name": "incididunt",
+	"flags": [
+		"flower"
+	]
+}, {
+	"name": "ea",
+	"flags": [
+		"heart",
+		"sun"
+	]
+}, {
+	"name": "anim",
+	"flags": [
+		"flower",
+		"heart"
+	]
+}, {
+	"name": "nostrud",
+	"flags": [
+		"flower",
+		"flash"
+	]
+}, {
+	"name": "ipsum",
+	"flags": [
+		"sun",
+		"flash"
+	]
+}, {
+	"name": "sint",
+	"flags": [
+		"flower",
+		"heart",
+		"flash"
+	]
+}, {
+	"name": "sunt",
+	"flags": [
+		"flash",
+		"flower",
+		"heart"
+	]
+}, {
+	"name": "cillum",
+	"flags": [
+		"flower"
+	]
+}, {
+	"name": "elit",
+	"flags": [
+		"flower"
+	]
+}, {
+	"name": "duis",
+	"flags": [
+		"flower"
+	]
+}, {
+	"name": "eu",
+	"flags": [
+		"flash",
+		"heart"
+	]
+}, {
+	"name": "velit",
+	"flags": [
+		"sun"
+	]
+}, {
+	"name": "cupidatat",
+	"flags": [
+		"heart"
+	]
+}, {
+	"name": "sint",
+	"flags": [
+		"sun",
+		"flash"
+	]
+}, {
+	"name": "non",
+	"flags": [
+		"flower"
+	]
+}, {
+	"name": "nisi",
+	"flags": [
+		"sun",
+		"flash"
+	]
+}]

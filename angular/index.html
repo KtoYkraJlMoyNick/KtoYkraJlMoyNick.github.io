@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html ng-app="filterApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>проект</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="css/normalize.4.0.0.css">
+
+
+	<link rel="stylesheet" href="css/style.min.css"/>
+
+	<!--[if lt IE 9]>
+		<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	<script src="lib/respond.min.js"></script>
+</head>
+
+<body>
+	<section class="content" >
+<!-- filterCtrlLeft -->
+		<div class="filter" ng-controller="filterCtrlLeft">
+			<header class="filter__header">
+				Sort
+				<div class="filter__elements">
+					<div class="filter__element filter__element--checkbox">
+						<input type="checkbox" name="filter-order" id="filter-order">
+						<label class="filter__element-label filter__element-label--circle" for="filter-order" ng-click = "sortByName()"></label>
+					</div>
+					<div class="filter__element filter__element--text">
+						<form >
+							<input type="text" name="filter-text" placeholder="filter text" ng-model = "search">
+						</form>
+					</div>
+				</div>
+			</header>
+			<div class="filter__list-wrap">
+				<ul class="filter__list">
+					<li class="filter__list-item" ng-repeat="item in items | orderBy:sortType:sortReverse | filter:search as results" ng-click = "addInfo(item, $event)">
+						<a href="" class="filter__list-link">
+							<span class="filter__item-name">{{item.name}}</span>
+							<div class="filter__item-icons" >
+								<i ng-repeat="property in item.flags" class="icon-{{property}}"></i>
+							</div>
+						</a>
+					</li>
+					<li ng-if="results.length == 0">
+						No items found
+					</li>
+				</ul>
+			</div>
+		</div>
+<!-- middleCtrl -->
+		<div class="block-info" ng-controller = "middleCtrl">
+			<div class="block-info__inner">
+				<h2 class="block-info__title">{{title}}</h2>
+				<div class="block-info__row">
+					<div class="block-info__category">Name</div>
+					<div>:</div>
+					<div class="block-info__value">{{name}}</div>
+				</div>
+				<div class="block-info__row">
+					<div class="block-info__category">Flags</div>
+					<div>:</div>
+					<div class="block-info__value">
+						<i class="icon-{{icon}}" ng-repeat = "icon in flags"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- filterCtrlRight -->
+		<div class="filter" ng-controller="filterCtrlRight">
+			<header class="filter__header">
+				Filters:
+				<div class="filter__elements">
+					<div class="filter__element filter__element--checkbox"  ng-repeat = "property in getCategories()">
+						<input type="checkbox" name="filter-property" id="filter-{{property}}" ng-checked="selection.indexOf(getCategories()[$index]) > -1" ng-click="toggleSelection(getCategories()[$index])">
+						<label class="filter__element-label" for="filter-{{property}}">
+							<i class="icon-{{property}}"></i>
+						</label>
+					</div>
+				</div>
+			</header>
+			<div class="filter__list-wrap">
+				<ul class="filter__list">
+					<li class="filter__list-item" ng-repeat = "item in items | orderBy:'name' | filter:itemFilter as results"  ng-click = "addInfo(item, $event)">
+						<a href="" class="filter__list-link">
+							<span class="filter__item-name">{{item.name}}</span>
+							<div class="filter__item-icons" >
+								<i ng-repeat = "property in item.flags" class="icon-{{property}}"></i>
+							</div>
+						</a>
+					</li>
+					<li ng-if = "results == 0">
+						No items found
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/controllers/controllers.js"></script>
+</body>
+
+</html>
