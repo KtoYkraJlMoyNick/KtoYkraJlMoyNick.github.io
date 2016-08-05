@@ -79,7 +79,7 @@
 				Filters:
 				<div class="filter__elements">
 					<div class="filter__element filter__element--checkbox"  ng-repeat = "property in getCategories()">
-						<input type="checkbox" name="filter-property" id="filter-{{property}}" ng-checked="selection.indexOf(getCategories()[$index]) > -1" ng-click="toggleSelection(getCategories()[$index])">
+						<input type="checkbox" name="filter-property" id="filter-{{property}}"  ng-click="toggleSelection(getCategories()[$index])">
 						<label class="filter__element-label" for="filter-{{property}}">
 							<i class="icon-{{property}}"></i>
 						</label>

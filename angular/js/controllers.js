@@ -32,7 +32,8 @@ filterApp.controller('filterCtrlLeft', function ($scope, $http, infoBlock){
       target = target.parentNode;
     }
     infoBlock.setInfo(item);
-    angular.element(target).addClass('activated');
+    target.classList.add('activated');
+    //angular.element(target).addClass('activated');
   }
 });
 
@@ -80,7 +81,6 @@ filterApp.controller('filterCtrlRight', function($scope, $http, infoBlock){
       }) || [];
       matched = matched && matchingService.length > 0;
    });
-
    return matched;
  };
 
